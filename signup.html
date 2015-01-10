@@ -25,44 +25,63 @@
     <div class="row">
       <div class = "small-12 column">
         Full Name* <br>
-        <input name = "moo" type = "text" id = "full-name"/>
+        <input type="text" id="full-name" name="full-name" placeholder="Full Name" 
+        onfocus="if(this.value == 'Full Name'){this.value='';}" />
       </div>
     </div>
     <div class="row">
       <div class = "small-12 column">
         Username* <br>
-        <input name = "moo" type = "text" id = "username"/>
+        <input type="text" id="username" name="username" placeholder="Username" 
+        onfocus="if(this.value == 'Username'){this.value='';}" />
       </div>
     </div>
     <div class="row">
       <div class = "small-12 column">
         Password* <br>
-        <input name = "moo" type = "text" id = "password"/>
+        <input type="text" id="password" name="Password" placeholder="Password" 
+        onfocus="if(this.value == 'Password'){this.value='';}" />
       </div>
     </div>
     <div class="row">
       <div class = "small-12 column">
         Confirm Password* <br>
-        <input name = "moo" type = "text" id = "passwordconfirm"/>
+        <input type="text" id="passwordconfirm" name="ConfirmPassword" placeholder="Confirm password" 
+        onfocus="if(this.value == 'Confirm password'){this.value='';}" />
+      </div>
+    </div>
+
+    <div class = "row">
+      <div class = "small-4 column">
+        Gender* <br>
+        <form action="">
+        <select name="Gender" id = "gender">
+        <option value="Choose a gender">Choose a gender</option>
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+        <option value="Prefer not to answer">Prefer not to answer</option>
+        </select>
+        </form>
       </div>
     </div>
     <div class = "row">
       <div class = "small-4 column">
         Date of Birth* <br>
         <form action="">
-        <select name="Month">
-        <option value="Jan">Jan</option>
-        <option value="Feb">Feb</option>
-        <option value="Mar">Mar</option>
-        <option value="Apr">Apr</option>
-        <option value="May">May</option>
-        <option value="Jun">Jun</option>
-        <option value="Jul">Jul</option>
-        <option value="Aug">Aug</option>
-        <option value="Sep">Sep</option>
-        <option value="Oct">Oct</option>
-        <option value="Nov">Nov</option>
-        <option value="Dec">Dec</option>
+        <select name="Month" id = "month">
+        <option value="">Month</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="9">9</option>
+        <option value="10">10</option>
+        <option value="11">11</option>
+        <option value="12">12</option>
         </select>
         </form>
       </div>
@@ -70,10 +89,11 @@
       <div class = "small-4 column">
         <br>
         <form action="">
-        <select name="Day">
+        <select name="Day" id = "day">
+        <option value="">Day</option>
         <script>
         for(day = 1; day <= 31; day++){
-           document.write('<option value="">');
+           document.write('<option value="' + day + '">');
            document.write(day);
            document.write('</option>');
         }
@@ -85,10 +105,11 @@
       <div class = "small-4 column">
         <br>
         <form action="">
-        <select name="Year">
+        <select name="Year" id = "year">
+        <option value="">Year</option>
         <script>
-        for(year = 1900; year < 2015; year++){
-           document.write('<option value="">');
+        for(year = 2015; year >= 1900; year--){
+           document.write('<option value="' + year + '">');
            document.write(year);
            document.write('</option>');
         }
@@ -101,19 +122,21 @@
     <div class="row">
       <div class = "small-4 column">
         Zip Code* <br>
-        <input name = "moo" type = "text" id = "zipcode"/>
+        <input type="text" id="zipcode" name="zipcode" placeholder="Zip Code" 
+        onfocus="if(this.value == 'Zip Code'){this.value='';}" />
       </div>
       <div class = "small-8 column">
         Race/Ethnicity* <br>
         <form action="">
         <select name="Race" id = "race">
+        <option value="">Race</option>
         <option value="African-American">African-American</option>
         <option value="Asian/Pacific Islander">Asian/Pacific Islander</option>
         <option value="Caucasian">Caucasian</option>
         <option value="Hispanic">Hispanic</option>
         <option value="Native American">Native American</option>
         <option value="Other">Other</option>
-        <option value="No Response">No Response</option>
+        <option value="Prefer not to answer">No Response</option>
         </select>
         </form>
       </div>
@@ -122,7 +145,7 @@
     
   <div class = "row" >
     <div class = "small-12 column">
-      <button type="button">Next</button> 
+      <button type="button" id = "signup-submit">Next</button> 
     </div>
   </div>
     
