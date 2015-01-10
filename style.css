@@ -53,6 +53,7 @@ button {
 
 #tabs {
 	height: 40px;
+	font-weight: bold;
 }
 
 .comment {
@@ -80,4 +81,17 @@ button {
 
 #back {
 	color: #fff;
+}
+
+ul {
+	list-style-type: none;
+}
+
+select {
+	font-family: helvetica;
+	font-size: 12pt;
+}
+
+option {
+	padding: 10px;
 }
