@@ -58,7 +58,7 @@ button {
 
 .comment {
 	background-color: #f6f6f6;
-	padding: 10px;
+	padding-top: 10px;
 }
 
 .textInput {
@@ -94,4 +94,8 @@ select {
 
 option {
 	padding: 10px;
+}
+
+#disqus_thread {
+	margin: 10px;
 }
