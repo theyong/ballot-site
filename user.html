@@ -6,79 +6,89 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>VirtualVote</title>
 	<link rel="stylesheet" href="css/foundation.css" />
+	<link rel="stylesheet" href="style.css" />
 	<script src="js/vendor/modernizr.js"></script>
 </head>
 
 <body>
 
-	<header class="row">
-		<div class="small-12 columns">
+	<header class="row" id="header">
+		<div class="small-12 columns" id="pollBoothName">
 			PollBooth
 		</div>
 	</header>
 
-	<div class="row">
-		<div class="small-6 columns">
-			bobman
-		</div>
-		<div class="small-6 columns">
-			1000 points
-		</div>
-	</div>
-	<div class="row">
-		<div class="small-12 column">
-			<h3>Top 3 Categories</h2>
+	<div class="card">
+		<div class="row">
+			<div class="small-6 columns">
+				bobman
 			</div>
-		<div class="small-6 column">
-	<h2>
+			<div class="small-6 columns">
+				1000 points
+			</div>
+		</div>
+		<div class="row">
+			<div class="small-12 column">
+				<h2>Top 3 Categories</h2>
+			</div>
+			<div class="small-6 column">
+				<h2>
 				<ol>
 					<li>Education</li>
 					<li>Environment</li>
 					<li>Industry</li>
 				</ol>
 			</h2>
-		</div>
-		<div class="small-6 column">
-			<h2>
+			</div>
+			<div class="small-6 column">
+				<h2>
 				<ul style="list-style-type: none;">
 					<li>5 bills</li>
 					<li>3 bills</li>
 					<li>1 bill</li>
 				</ul>
 			</h2>
-		</div>
-
-	</div>
-	
-	<div class="row">
-		<a href="">All</a>&nbsp;&nbsp;
-		<a href="">Votes</a>&nbsp;&nbsp;
-		<a href="">Comments</a>&nbsp;&nbsp;
-	</div>
-	
-	<div class="row">
-		<div class="panel">
-			<div class="small-12 column">
-				<p>bobman voted for:</p>
 			</div>
-			<div class="small-12 column">
-			<h3>H.R. 30: Save American Workers Act of 2015</h3>
+
 		</div>
-	</div>
 	</div>
 
-	<div class="row">
-		<div class="panel">
-			<div class="small-12 column">
-				<p>bobman commented:</p>
-			</div>
-			<div class="small-12 column">
-				<p>I feel like lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. <a href="">Read more</a>
-				</p>
+	<div class="row" id="tabs">
+		<div class="small-12 columns tab">
+			<a href="">All</a>&nbsp;&nbsp;
+			<a href="">Votes</a>&nbsp;&nbsp;
+			<a href="">Comments</a>&nbsp;&nbsp;
+		</div>
+	</div>
+
+	<div class="card">
+		<div class="row">
+			<div class="panel">
+				<div class="small-12 column">
+					<p>bobman voted for:</p>
+				</div>
+				<div class="small-12 column">
+					<h3>H.R. 30: Save American Workers Act of 2015</h3>
+				</div>
 			</div>
 		</div>
-		<div class="small-12 column">
-			on <a href="bill.html">H.R. 30: Save American Workers Act of 2015</a>
+	</div>
+
+	<div class="card">
+		<div class="row">
+			<div class="panel">
+				<div class="small-12 column">
+					<p>bobman commented:</p>
+				</div>
+				<div class="small-12 column comment">
+					<p>I feel like lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam lectus. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. <a href="">Read more</a>
+					</p>
+				</div>
+
+				<div class="small-12 column">
+					on <a href="bill.html">H.R. 30: Save American Workers Act of 2015</a>
+				</div>
+			</div>
 		</div>
 	</div>
 
