@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
 	<meta charset="utf-8" />
@@ -28,9 +28,9 @@
 						<br>Here is how other people have been voting on this bill:</p>
 				</div>
 			</div>
-			<div class="row">
-				<canvas id="voteChart" width="360" height="400"></canvas>
-			</div>
+
+			<canvas id="voteChart" width="360" height="400"></canvas>
+
 		</div>
 	</div>
 
@@ -42,6 +42,28 @@
 	<script src="js/chartjs/Chart.js"></script>
 	<script>
 		$(document).foundation();
+
+		$(document).ready(function () {
+
+			var pieData = [
+				{
+					value: 50,
+					color: "#3498DB",
+					highlight: "#32AFDD",
+					label: "Bonds"
+        },
+				{
+					value: 50,
+					color: "#6EBF87",
+					highlight: "#89D2AA",
+					label: "Stocks"
+        }
+    ];
+
+			var ctx = document.getElementById("voteChart").getContext("2d");
+			var doughnutChart = new Chart(ctx).Doughnut(pieData);
+
+		});
 	</script>
 </body>
 
