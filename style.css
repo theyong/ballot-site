@@ -23,7 +23,7 @@
 	text-align: center;
 	color: #fff;
 	-webkit-box-shadow: 0px 2px 4px #9B9B9B;
-	box-shadow: 0px 2px 4px rgba(0,0,0,.24);
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, .24);
 }
 #pollBoothName {
 	top: 12px;
@@ -42,7 +42,7 @@ body {
 	margin: 10px;
 	margin-bottom: 20px;
 	-webkit-box-shadow: 0px 2px 4px #646464;
-	box-shadow: 0px 2px 4px rgba(0,0,0,.24);
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, .24);
 }
 h2 {
 	font-family: national-bold;
@@ -52,7 +52,7 @@ h2 {
 .right {
 	text-align: right;
 }
-button {} .cardButton {
+.cardButton {
 	padding: 5px;
 	width: 100%;
 	font-family: national-bold;
@@ -109,60 +109,48 @@ option {
 a {
 	color: #9B9B9B;
 }
-a:hover{
+a:hover {
 	color: #000;
 }
-
 .active {
 	color: #3498DB;
 }
-
 .cardImage {
 	height: 260px;
 	background-image: url(img/hr30.png);
 	background-position: center;
 }
-
 .cardContent {
 	padding: 10px;
 }
-
 .headline {
 	top: 120px;
-	
 }
-
 #no {
-		color: #E74C3C;
+	color: #E74C3C;
 }
-
 #yes {
 	color: #1CB660;
 	text-align: right;
 }
-
 #more {
 	color: #4A4A4A;
 	font-family: national-bold;
 	text-align: center;
 	font-size: 18pt;
 }
-
 .progress {
 	color: #ABABAB;
 	text-align: center;
 }
-
 .highlight {
 	background-color: #3498DB;
 }
-
 h1 {
 	font-family: national-bold;
 	color: #3498DB;
 	font-size: 28pt;
 }
-
 .container {
 	position: relative;
 	width: 100%;
@@ -171,54 +159,39 @@ h1 {
 	background-image: url(img/hr30.png);
 	background-position: center;
 }
-
 #bill {
 	position: relative;
 	top: -50px;
 }
-
 #rep {
 	color: #E74C3C;
 	font-family: national-bold;
 }
-
-#voteChart {
-	
-}
-
-.chart {
+#voteChart {} .chart {
 	text-align: center;
 }
-
 h3 {
 	color: #4A4A4A;
 	font-family: national-bold;
 }
-
 .bold {
 	font-family: national-bold;
 }
-
 ol {
 	font-size: 20px;
 }
-
 .bills {
 	font-size: 20px;
 }
-
 p {
 	font-size: 20px;
 }
-
 form {
 	margin-bottom: 10px;
 }
-
 .blue {
 	color: #3498DB;
 }
-
 #profile {
 	position: absolute;
 	right: 20px;
@@ -226,3 +199,36 @@ form {
 	width: 40px;
 	height: 40px;
 }
+#welcome {
+	height: 100%;
+	background-color: #E74C3C;
+	color: #fff;
+	font-size: 36pt;
+	text-align: center;
+}
+#landingH1 {
+	color: #fff;
+	font-size: 48pt;
+}
+div.landing {
+	top: 300px;
+}
+button.landing {
+	background-color: #fff;
+	font-family: national-bold;
+	font-size: 18px;
+	color: #E74C3C;
+	width: 300px;
+}
+button.landing:active {
+	background-color: #E74C3C;
+	font-family: national-bold;
+	font-size: 18px;
+	color: #fff;
+	width: 300px;
+}
+
+
+
+
+
