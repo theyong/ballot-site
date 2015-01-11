@@ -1,71 +1,82 @@
-
+@font-face {
+	font-family: 'National-Regular';
+	src: url('fonts/national-regular.eot');
+	src: url('fonts/national-regular.eot') format('embedded-opentype'), url('fonts/national-regular.woff') format('woff'), url('fonts/national-regular.ttf') format('truetype'), url('fonts/national-regular.svg#National-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'National-Bold';
+	src: url('fonts/national-bold.eot');
+	src: url('fonts/national-bold.eot') format('embedded-opentype'), url('fonts/national-bold.woff') format('woff'), url('fonts/national-bold.ttf') format('truetype'), url('fonts/national-bold.svg#National-Bold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
 #header {
-	background-color: #646464;
+	font-family: national-bold;
+	background-color: #E74C3C;
 	width: 100%;
-	height: 50px;
-	font-size: 18px;
+	height: 60px;
+	font-size: 24px;
 	margin: 0 auto;
 	padding: 0;
 	text-align: center;
 	color: #fff;
+	-webkit-box-shadow: 0px 2px 4px #9B9B9B;
+	box-shadow: 0px 2px 4px rgba(0,0,0,.24);
 }
-
 #pollBoothName {
-	top: 10px;
+	top: 12px;
 }
-
-
-
 body {
-	font-weight: bold;
+	font-family: national-regular;
 	font-size: 18px;
 	background-color: #F6F6F6;
 }
-
 .tab {
-	top: 10px;
+	top: 20px;
+	font-size: 24px;
 }
-
 .card {
 	background-color: #fff;
 	margin: 10px;
-	padding: 10px;
-	box-shadow: 0px 2px 4px #646464;
+	margin-bottom: 20px;
+	-webkit-box-shadow: 0px 2px 4px #646464;
+	box-shadow: 0px 2px 4px rgba(0,0,0,.24);
 }
-
 h2 {
-	font-weight: bold;
+	font-family: national-bold;
+	padding: 10px;
+	color: #fff;
 }
-
 .right {
 	text-align: right;
 }
-
-button {
-
-}
-
-.cardButton {
-		padding: 5px;
+button {} .cardButton {
+	padding: 5px;
 	width: 100%;
-	font-weight: bold;
+	font-family: national-bold;
+	font-size: 18pt;
+	background-color: #3498DB;
+	height: 60px;
 }
-
 #tabs {
-	height: 40px;
-	font-weight: bold;
+	height: 60px;
+	font-family: national-bold;
 }
-
 .comment {
 	background-color: #f6f6f6;
 	padding-top: 10px;
+	margin-bottom: 10px;
 }
-
 .textInput {
 	width: 100%;
-	height: 30px;
+	height: 40px;
+	margin-bottom: 10px;
+	font-size: 12pt;
+	padding: 10px;
+	font-family: national-regular;
 }
-
 #backButton {
 	position: absolute;
 	top: 10px;
@@ -74,28 +85,144 @@ button {
 #backButton a {
 	font-color: #fff;
 }
-
 #back a {
 	color: #fff;
 }
-
 #back {
 	color: #fff;
 }
-
 ul {
 	list-style-type: none;
 }
-
 select {
-	font-family: helvetica;
+	font-family: national-regular;
 	font-size: 12pt;
 }
-
 option {
+	padding: 20px;
+}
+#disqus_thread {
+	margin: 20px;
+	position: relative;
+	top: -50px;
+}
+a {
+	color: #9B9B9B;
+}
+a:hover{
+	color: #000;
+}
+
+.active {
+	color: #3498DB;
+}
+
+.cardImage {
+	height: 260px;
+	background-image: url(img/hr30.png);
+	background-position: center;
+}
+
+.cardContent {
 	padding: 10px;
 }
 
-#disqus_thread {
-	margin: 10px;
+.headline {
+	top: 120px;
+	
+}
+
+#no {
+		color: #E74C3C;
+}
+
+#yes {
+	color: #1CB660;
+	text-align: right;
+}
+
+#more {
+	color: #4A4A4A;
+	font-family: national-bold;
+	text-align: center;
+	font-size: 18pt;
+}
+
+.progress {
+	color: #ABABAB;
+	text-align: center;
+}
+
+.highlight {
+	background-color: #3498DB;
+}
+
+h1 {
+	font-family: national-bold;
+	color: #3498DB;
+	font-size: 28pt;
+}
+
+.container {
+	position: relative;
+	width: 100%;
+	height: 200px;
+	z-index: -1;
+	background-image: url(img/hr30.png);
+	background-position: center;
+}
+
+#bill {
+	position: relative;
+	top: -50px;
+}
+
+#rep {
+	color: #E74C3C;
+	font-family: national-bold;
+}
+
+#voteChart {
+	
+}
+
+.chart {
+	text-align: center;
+}
+
+h3 {
+	color: #4A4A4A;
+	font-family: national-bold;
+}
+
+.bold {
+	font-family: national-bold;
+}
+
+ol {
+	font-size: 20px;
+}
+
+.bills {
+	font-size: 20px;
+}
+
+p {
+	font-size: 20px;
+}
+
+form {
+	margin-bottom: 10px;
+}
+
+.blue {
+	color: #3498DB;
+}
+
+#profile {
+	position: absolute;
+	right: 20px;
+	top: 10px;
+	width: 40px;
+	height: 40px;
 }
