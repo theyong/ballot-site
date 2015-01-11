@@ -26,7 +26,8 @@
 	box-shadow: 0px 2px 4px rgba(0, 0, 0, .24);
 }
 #pollBoothName {
-	top: 12px;
+	text-align: center;
+	top: 10px;
 }
 body {
 	font-family: national-regular;
@@ -46,7 +47,6 @@ body {
 }
 h2 {
 	font-family: national-bold;
-	padding: 10px;
 	color: #fff;
 }
 .right {
@@ -116,28 +116,30 @@ a:hover {
 	color: #3498DB;
 }
 .cardImage {
-	height: 260px;
+	min-height: 150px;
 	background-image: url(img/hr30.png);
 	background-position: center;
+	position: relative;
+	padding: 20px;
+	padding-top: 60px;
 }
 .cardContent {
 	padding: 10px;
 }
-.headline {
-	top: 120px;
-}
+
 #no {
 	color: #E74C3C;
 }
-#yes {
+.yes {
 	color: #1CB660;
 	text-align: right;
+
 }
-#more {
+.vote {
 	color: #4A4A4A;
 	font-family: national-bold;
 	text-align: center;
-	font-size: 18pt;
+	font-size: 24pt;
 }
 .progress {
 	color: #ABABAB;
@@ -145,6 +147,10 @@ a:hover {
 }
 .highlight {
 	background-color: #3498DB;
+	padding: 5px;
+	font-family: national-bold;
+	color: #fff;
+	font-size: 20pt;
 }
 h1 {
 	font-family: national-bold;
@@ -232,3 +238,18 @@ button.landing:active {
 
 
 
+
+.no {
+
+}
+
+span {
+	padding: 4px;
+}
+
+.headline {
+}
+
+#logo {
+	width: 40px;
+}
